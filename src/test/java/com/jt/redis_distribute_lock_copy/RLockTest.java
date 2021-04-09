@@ -39,6 +39,7 @@ class RLockTest {
             log.info("taskLockOne加锁成功...");
             log.info("taskLockOne业务开始...");
 
+
             TimeUnit.SECONDS.sleep(50);
             log.info("taskLockOne任务执行结束...");
 
