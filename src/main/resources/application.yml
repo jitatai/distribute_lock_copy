@@ -1,0 +1,21 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/sys?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+    username: root
+    password: xpar
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  redis:
+    host: localhost
+    password: xpar
+    database: 1
+    connect-timeout: 1000
+    port: 6379
+
+# 调整控制台日志格式，稍微精简一些（非必要操作）
+logging:
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} - %thread - %msg%n"
